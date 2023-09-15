@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Marhey", cursive;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  background-image: url("../img/Jelovnik/pozadina.jpg");
+}
+
+.navigacija {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  background-color: rgb(56, 103, 18);
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+  filter: opacity(90%);
+}
+
+#logo img {
+  height: 40px;
+  padding: 25px;
+}
+
+.stavkaNavigacije {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.stavkaNavigacije a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+.stavkaNavigacije a:hover {
+  color: #f58634;
+}
+
+#ovaStr {
+  color: #f58634;
+  text-decoration: underline solid #f58634;
+}
+
+.naslov {
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+}
+
+.naslov h1 {
+  color: #000000;
+  font-size: 85px;
+  font-weight: bold;
+  line-height: 1.24;
+}
+
+.mali-tekst {
+  font-size: 24px;
+}
+
+.stavkeJelovnika {
+  padding: 0 15px;
+}
+
+.stavkeJelovnika .red {
+  display: flex;
+}
+
+.stavkeJelovnika .red.obrnuto {
+  flex-direction: row-reverse;
+}
+
+.slika,
+.opis {
+  width: 50%;
+}
+
+.stavkeJelovnika .opis {
+  border: 1px solid rgb(16, 78, 10);
+}
+
+.stavkeJelovnika .slika {
+  border: 1px solid rgb(16, 78, 10);
+  height: 300px;
+}
+
+#prijava {
+  flex-grow: 100;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.stavkeJelovnika .opis h2 {
+  text-align: center;
+  padding: 22px;
+}
+
+.stavkeJelovnika .opis p {
+  font-size: 20px;
+  margin: 0px;
+  padding: 15px;
+  text-align: center;
+}
+
+.stavkeJelovnika img {
+  height: 90%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 10px 6px rgba(0, 0, 0, 0.75);
+}
+
+.stavkeJelovnika img:hover {
+  scale: 1.03;
+}
+
+.stavkeJelovnika .slika {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+  background-color: rgba(69, 181, 50, 0.7);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(69, 181, 50, 1);
+  border-radius: 10px;
+  border: 1px solid black;
+}
+
+#divPocetak {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#divPocetak a {
+  padding: 20px;
+
+  border: 2px solid rgba(16, 78, 10, 1);
+  border-radius: 20px;
+  margin-top: 15px;
+  text-decoration: none;
+  color: rgba(16, 78, 10, 1);
+  font-weight: bold;
+  background-color: rgba(69, 181, 50, 0.6);
+}
+
+#divPocetak a:hover {
+  background-color: rgba(69, 181, 50, 0.8);
+  cursor: pointer;
+}
+
+footer {
+  height: 200px;
+  margin-top: 15px;
+  background-image: url("../img/Jelovnik/pozadina\ -\ narandzasta.jpg");
+  border-top: 2px solid rgb(16, 78, 10);
+  display: flex;
+  flex-direction: column;
+}
+
+.futerSpoljni:first-child {
+  height: 70%;
+}
+
+.futerSpoljni {
+  display: flex;
+}
+
+#futerGoreLevo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  flex-grow: 1;
+}
+
+#futerGoreLevo img {
+  height: 50%;
+}
+
+#futerGoreLevo p {
+  color: rgb(16, 78, 10);
+  font-weight: 600;
+  text-align: center;
+}
+
+#futerGoreDesno {
+  flex-grow: 20;
+  display: flex;
+  flex-direction: column;
+}
+
+#futerGoreDesnoGore {
+  flex-grow: 95;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+
+#futerGoreDesnoGore div {
+  height: 100%;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
+#futerGoreDesnoDole {
+  width: 100%;
+  flex-grow: 5;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+#futerGoreDesnoDole a {
+  text-decoration: none;
+  color: rgb(16, 78, 10);
+}
+
+#futerGoreDesnoDole a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  width: 90%;
+  align-self: center;
+  margin: 10px 0;
+  border-top: 1px solid rgb(16, 78, 10);
+  height: 1px;
+  display: block;
+}
+
+#futerDole {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#futerDole a img {
+  height: 30px;
+  margin: 0px 15px;
+}
+
+.dugme-navigacija {
+  display: none;
+}
+
+@media only screen and (max-width: 991px) {
+  .stavkeJelovnika .red {
+    padding-bottom: 60px;
+  }
+
+  .stavkeJelovnika .red {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .stavkeJelovnika .red.obrnuto {
+    flex-direction: column;
+  }
+
+  #futerGoreDesnoGore {
+    padding-bottom: 30px;
+  }
+
+  footer {
+    height: auto;
+    padding: 0 15px;
+  }
+
+  .futerSpoljni {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #futerGoreLevo img {
+    height: auto;
+    width: 150px;
+  }
+
+  #futerGoreDesnoGore {
+    margin: auto;
+    gap: 40px;
+  }
+
+  #futerDole {
+    flex-direction: row;
+  }
+}
+
+@media only screen and (max-width: 661px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .dugme-navigacija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #69b550;
+    z-index: 999;
+  }
+
+  .dugme-navigacija img {
+    width: 100%;
+  }
+
+  #futerGoreDesnoGore {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .slika,
+  .opis {
+    width: 100%;
+  }
+
+  .navigacija {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navigacija.ukljucena {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .stavkaNavigacije a {
+    color: #ffffff;
+  }
+}

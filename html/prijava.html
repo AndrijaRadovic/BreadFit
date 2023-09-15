@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="../css/prijava.css" />
+
+    <link
+      rel="shortcut icon"
+      href="../img/Untitled-design.png"
+      type="image/x-icon"
+    />
+
+    <title>Bread Fit</title>
+  </head>
+
+  <body>
+    <button type="button" class="dugme-navigacija">
+      <img src="../img/dugme.png" alt="" />
+    </button>
+
+    <ul class="navigacija">
+      <li id="logo"><img src="../img/Untitled-design.png" alt="" /></li>
+      <li class="stavkaNavigacije"><a href="index.html">Početna strana</a></li>
+      <li class="stavkaNavigacije"><a href="jelovnik.html">Jelovnik</a></li>
+      <li class="stavkaNavigacije"><a href="o nama.html">O nama</a></li>
+      <li class="stavkaNavigacije" id="prijava">
+        <a href="" id="ovaStr">Registruj se</a>
+      </li>
+    </ul>
+
+    <div class="ekran">
+      <div class="okvirForme">
+        <form id="formaZaPrijavu">
+          <h1>Registracija</h1>
+          <label for="ime">Ime</label> <br />
+          <input type="text" id="ime" placeholder="Ime" class="tekst" /><br />
+          <label for="prezime">Prezime</label> <br />
+          <input type="text" id="prezime" placeholder="Prezime" class="tekst" />
+
+          <p>Pol</p>
+          <input
+            type="radio"
+            id="muski"
+            name="pol"
+            value="Muški"
+            class="radio"
+          />
+          <label for="muski">Muški</label>
+          <br />
+          <input
+            type="radio"
+            id="zenski"
+            name="pol"
+            value="Ženski"
+            class="radio"
+          />
+          <label for="zenski">Ženski</label> <br />
+
+          <label for="email">E-mail adresa</label> <br />
+          <input
+            type="text"
+            id="email"
+            placeholder="example@mail.com"
+            class="tekst"
+          /><br />
+          <label for="lozinka">Lozinka</label> <br />
+          <input type="password" id="lozinka" class="tekst" /><br />
+
+          <label for="datum">Datum rođenja</label> <br />
+          <input type="date" id="datum" class="tekst" /> <br />
+
+          <button id="prijavaDugme" type="submit">Registruj se</button>
+        </form>
+      </div>
+    </div>
+
+    <footer>
+      <div class="futerSpoljni">
+        <div id="futerGoreLevo">
+          <img src="../img/Untitled-design.png" alt="" />
+          <p>Zdravlje na usta ulazi!</p>
+        </div>
+        <div id="futerGoreDesno">
+          <div id="futerGoreDesnoGore">
+            <div id="futerGoreDesnoGoreLevo">
+              <p>
+                Karađorđeva 48, 11000 Beograd <br />
+                Kontakt: +381/65789666
+                <br />
+                Radno vreme: 08-23h
+              </p>
+            </div>
+            <div id="futerGoreDesnoGoreSredina">
+              <p>
+                Maršala Tolbuhina 25, 11000 Beograd <br />
+                Kontakt: +381/661501777
+                <br />
+                Radno vreme: 09-22h
+              </p>
+            </div>
+            <div id="futerGoreDesnoGoreDesno">
+              <p>
+                Obilićev venac 13, 11000 Beograd
+                <br />
+                Kontakt: +381/607473233
+                <br />
+                Radno vreme: 09-23h
+              </p>
+            </div>
+          </div>
+          <div id="futerGoreDesnoDole">
+            <a href="./index.html">Početna strana</a>
+            <a href="./jelovnik.html">Jelovnik</a>
+            <a href="./o nama.html">O nama</a>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="futerSpoljni" id="futerDole">
+        <a href="https://www.instagram.com" target="_blank"
+          ><img src="../img/futer-ikonice/instagram.png" alt=""
+        /></a>
+        <a href="https://www.facebook.com" target="_blank"
+          ><img src="../img/futer-ikonice/facebook.png" alt=""
+        /></a>
+        <a href="https://www.twitter.com" target="_blank"
+          ><img src="../img/futer-ikonice/twitter-sign.png" alt=""
+        /></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.js"
+      integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+      crossorigin="anonymous"
+    ></script>
+    <script src="../javascript/prijava.js"></script>
+  </body>
+</html>

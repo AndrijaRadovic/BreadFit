@@ -1,0 +1,198 @@
+@import url("https://fonts.googleapis.com/css2?family=Marhey:wght@300&display=swap");
+
+* {
+  margin: 0;
+  font-family: "Marhey", cursive;
+}
+
+html {
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-image: url("../img/Zdrava-hrana-1400x788.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.navigacija {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: center;
+  background-color: rgb(56, 103, 18);
+  position: sticky;
+  top: 0px;
+  z-index: 20;
+  filter: opacity(90%);
+}
+
+#logo img {
+  height: 40px;
+  padding: 25px;
+}
+
+.stavkaNavigacije {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  z-index: 2;
+}
+
+.stavkaNavigacije a:hover {
+  color: #f58634;
+}
+
+#ovaStr {
+  color: #f58634;
+  text-decoration: underline solid #f58634;
+}
+
+.stavkaNavigacije a {
+  text-decoration: none;
+  color: #ffffff;
+  text-align: center;
+}
+
+#prijava {
+  position: relative;
+}
+
+#pravougaonik {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 5px solid white;
+  z-index: 10;
+  width: 600px;
+  height: 300px;
+  transform: translate(-50%, -35%);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: ulazak;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+#pravougaonik img {
+  width: 190px;
+}
+
+#slogan {
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#logoCentar {
+  display: flex;
+  align-items: center;
+  font-size: 75px;
+  text-transform: uppercase;
+  color: #69b550;
+  font-weight: bold;
+  margin-top: 35px;
+  transition: all 0.5s ease-in-out;
+}
+
+#logoCentar:hover {
+  scale: 1.04;
+}
+
+#logoCentar span {
+  color: #f58634;
+}
+
+#logoCentar #fit {
+  color: #69b550;
+}
+
+#prijava {
+  flex-grow: 100;
+  text-align: right;
+  padding-right: 30px;
+}
+
+.dugme-navigacija {
+  display: none;
+}
+
+@keyframes ulazak {
+  0% {
+    top: 1000px;
+  }
+}
+
+@media only screen and (max-width: 611px) {
+  #logoCentar {
+    font-size: 300%;
+    justify-content: center;
+  }
+
+  #pravougaonik {
+    width: 80%;
+    height: 200px;
+  }
+
+  #pravougaonik img {
+    width: 30%;
+  }
+
+  #slogan {
+    font-size: 17px;
+    margin-top: auto;
+  }
+
+  .dugme-navigacija {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #69b550;
+    z-index: 999;
+  }
+
+  .dugme-navigacija img {
+    width: 100%;
+  }
+
+  .navigacija {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .navigacija.ukljucena {
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .stavkaNavigacije a {
+    color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  #logoCentar {
+    font-size: 200%;
+  }
+}
